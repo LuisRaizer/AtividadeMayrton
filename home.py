@@ -2,7 +2,7 @@ from functions.add import adicionar
 from functions.sample_data import get_sample_funcionarios
 from functions.list import listar, listarporcargo, listarativos
 
-funcionarios = adicionar()
+funcionarios = get_sample_funcionarios()
 
 resp = input("Digite o número da opção desejada: \n1 - Listar todos os funcionários\n2 - Listar funcionários por cargo\n3 - Listar apenas funcionários ativos\n")
 
