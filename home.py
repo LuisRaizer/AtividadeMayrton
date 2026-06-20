@@ -2,6 +2,7 @@ from functions.add import adicionar
 from functions.list import listar, listarporcargo, listarativos
 from functions.alterarstatus import ativar
 from functions.update import alterar
+from functions.loadsave import salvar
 
 funcionarios = adicionar()
 
@@ -18,3 +19,7 @@ elif resp == "4":
     ativar(funcionarios)
 elif resp == "5":
     alterar(funcionarios)
+elif resp == "6":
+    salvar(funcionarios)
+else:
+    print("Opção inválida")
