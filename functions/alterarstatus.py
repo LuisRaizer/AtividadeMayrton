@@ -2,7 +2,7 @@ def ativar(funcionarios):
     ql = input("Insira o CPF do funcionário que você deseja alterar: ").strip()
 
     for func in funcionarios:
-        if ql == str(func["cpf"]):
+        if ql == func["cpf"]:
             status_atual = "ATIVO" if func["ativo"] else "INATIVO"
             print(f"O funcionário {func['nome']} está atualmente {status_atual}.")
             
