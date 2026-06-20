@@ -1,5 +1,5 @@
 def salvar(funcionarios, nome_arquivo="funcionarios.txt"):
-    """Salva a lista de funcionários em um arquivo texto (CSV simples com ';')."""
+    """Salva a lista de funcionários em um arquivo texto."""
     arquivo = open(nome_arquivo, "w", encoding="utf-8")
     
     for func in funcionarios:
