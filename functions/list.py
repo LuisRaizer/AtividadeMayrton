@@ -1,4 +1,5 @@
 def listar(funcionarios):
+    """Retorna lista de nomes de todos os funcionários."""
     funcionarios_list = []
     for func in funcionarios:
         nome = func["Nome"]
@@ -6,6 +7,7 @@ def listar(funcionarios):
     return funcionarios_list
 
 def listarporcargo(funcionarios, cargo):
+    """Retorna lista de nomes de funcionários com o cargo informado."""
     print(f"Listando funcionários pelo cargo de {cargo}: ")
     funcionarios_encontrados = []
     for func in funcionarios:
@@ -14,6 +16,7 @@ def listarporcargo(funcionarios, cargo):
     return funcionarios_encontrados
 
 def listarativos(funcionarios):
+    """Pergunta ao usuário e retorna funcionários ativos ou inativos conforme opção."""
     resp = input("Deseja listar apenas os funcionários ativos? (S/N): ").strip().upper()
     if resp != 'S':
         print("Listando funcionários inativos: ")

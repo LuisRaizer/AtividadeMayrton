@@ -1,5 +1,6 @@
 from datetime import date
 
+# Estrutura do dicionário de funcionário (tipos esperados)
 funcionario = {
     "Nome": str,
     "Data de nascimento": date,

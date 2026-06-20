@@ -1,6 +1,7 @@
 from datetime import date
 
 def adicionar():
+    """Lê dados do usuário e retorna um dicionário representando um funcionário."""
     nome = input("Digite o nome do funcionário: ")
     dia = int(input("Digite o dia de nascimento do funcionário: "))
     while dia < 1 or dia > 31:

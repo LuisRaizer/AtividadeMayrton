@@ -1,4 +1,5 @@
 def ativar(funcionarios):
+    """Altera (ativa/desativa) o status de um funcionário identificado pelo CPF."""
     ql = input("Insira o CPF do funcionário que você deseja alterar: ").strip()
 
     for func in funcionarios:

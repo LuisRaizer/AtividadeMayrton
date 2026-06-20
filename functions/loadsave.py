@@ -1,4 +1,5 @@
 def salvar(funcionarios, nome_arquivo="funcionarios.txt"):
+    """Salva a lista de funcionários em um arquivo texto (CSV simples com ';')."""
     arquivo = open(nome_arquivo, "w", encoding="utf-8")
     
     for func in funcionarios:
@@ -9,6 +10,7 @@ def salvar(funcionarios, nome_arquivo="funcionarios.txt"):
     print("Dados salvos com sucesso no arquivo TXT!")
 
 def carregar(nome_arquivo="funcionarios.txt"):
+    """Carrega e retorna a lista de funcionários do arquivo, se existir."""
     funcionarios = []
     
     try:

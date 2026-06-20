@@ -1,4 +1,5 @@
 def alterar(funcionarios):
+    """Altera campos de um funcionário localizado pelo CPF."""
     cpf = int(input("Insira o CPF do funcionário que você deseja alterar: ").strip())
 
     for func in funcionarios:
