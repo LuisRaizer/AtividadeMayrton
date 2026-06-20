@@ -7,3 +7,31 @@ def salvar(funcionarios, nome_arquivo="funcionarios.txt"):
         
     arquivo.close()
     print("Dados salvos com sucesso no arquivo TXT!")
+
+def carregar(nome_arquivo="funcionarios.txt"):
+    funcionarios = []
+    
+    try:
+        arquivo = open(nome_arquivo, "r", encoding="utf-8")
+        
+        for linha in arquivo:
+            cpf, nome, data_nascimento, cargo, email, telefone, salario, sexo, ativo = linha.strip().split(";")
+            funcionario = {
+                "CPF": int(cpf),
+                "Nome": nome,
+                "Data de nascimento": data_nascimento,
+                "Cargo": cargo,
+                "Email": email,
+                "Telefone": telefone,
+                "Salario": float(salario),
+                "Sexo": sexo,
+                "Ativo": ativo == "True"
+            }
+            funcionarios.append(funcionario)
+        
+        arquivo.close()
+        print("Dados carregados com sucesso do arquivo TXT!")
+    except FileNotFoundError:
+        print("Arquivo não encontrado. Nenhum dado foi carregado.")
+    
+    return funcionarios
