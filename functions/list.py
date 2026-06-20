@@ -1,5 +1,3 @@
-from datetime import date
-
 def listar(funcionarios):
     funcionarios_list = []
     for func in funcionarios:

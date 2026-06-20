@@ -6,7 +6,7 @@ from functions.loadsave import salvar
 
 funcionarios = adicionar()
 
-resp = input("Digite o número da opção desejada: \n1 - Listar todos os funcionários\n2 - Listar funcionários por cargo\n3 - Listar apenas funcionários ativos\n4 - Alterar Status de um funcionário\n5 - Editar dados de um funcionário")
+resp = input("Digite o número da opção desejada: \n1 - Listar todos os funcionários\n2 - Listar funcionários por cargo\n3 - Listar funcionários ativos/inativos\n4 - Alterar Status de um funcionário\n5 - Editar dados de um funcionário\n")
 
 if resp == "1":
     print(listar(funcionarios))
