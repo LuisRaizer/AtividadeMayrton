@@ -9,7 +9,8 @@ funcionarios = carregar()
 resp = input("Digite o número da opção desejada: \n1 - Adicionar funcionário\n2 - Listar todos os funcionários\n3 - Listar funcionários por cargo\n4 - Listar funcionários ativos/inativos\n5 - Alterar Status de um funcionário\n6 - Editar dados de um funcionário\n7 - Sair\nOpção: ")
 while resp != "7":
     if resp == "1":
-        funcionarios = adicionar()
+        novo = adicionar()
+        funcionarios.append(novo)
         salvar(funcionarios)
     elif resp == "2":
         print(listar(funcionarios))

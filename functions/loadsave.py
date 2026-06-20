@@ -30,7 +30,7 @@ def carregar(nome_arquivo="funcionarios.txt"):
             funcionarios.append(funcionario)
         
         arquivo.close()
-        print("Dados carregados com sucesso do arquivo TXT!")
+        print("Dados carregados")
     except FileNotFoundError:
         print("Arquivo não encontrado. Nenhum dado foi carregado.")
     
