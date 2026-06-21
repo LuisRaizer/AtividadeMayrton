@@ -22,6 +22,7 @@ while resp != "7":
         print(listarativos(funcionarios))
     elif resp == "5":
         ativar(funcionarios)
+        salvar(funcionarios)
     elif resp == "6":
         alterar(funcionarios)
         salvar(funcionarios)
