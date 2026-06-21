@@ -7,7 +7,7 @@ def salvar(funcionarios, nome_arquivo="funcionarios.txt"):
         arquivo.write(linha)
         
     arquivo.close()
-    print("Dados salvos com sucesso no arquivo TXT!")
+    print("Dados salvos com sucesso")
 
 def carregar(nome_arquivo="funcionarios.txt"):
     """Carrega e retorna a lista de funcionários do arquivo, se existir."""
